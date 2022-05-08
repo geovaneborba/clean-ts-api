@@ -1,0 +1,8 @@
+{
+  "name": "clean-ts-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/geovaneborba/clean-ts-api.git",
+  "author": "Geovane Borba <geovanne@live.com>",
+  "license": "MIT"
+}
