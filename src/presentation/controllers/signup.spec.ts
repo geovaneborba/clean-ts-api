@@ -1,5 +1,5 @@
-import { MissingParamError } from "../errors/missing-param-error"
-import { SignUpController } from "./signup"
+import { MissingParamError } from '../errors/missing-param-error'
+import { SignUpController } from './signup'
 
 describe('SignUp Controller', () => {
   it('should return 400 if no name is provided', () => {
@@ -10,8 +10,8 @@ describe('SignUp Controller', () => {
       body: {
         email: 'johndoe@example.com',
         password: '123456',
-        passwordConfirmation: '123456'
-      }
+        passwordConfirmation: '123456',
+      },
     }
 
     const httpResponse = sut.handle(httpRequest)
@@ -26,10 +26,10 @@ describe('SignUp Controller', () => {
 
     const httpRequest = {
       body: {
-        name: "john doe",
+        name: 'john doe',
         password: '123456',
-        passwordConfirmation: '123456'
-      }
+        passwordConfirmation: '123456',
+      },
     }
 
     const httpResponse = sut.handle(httpRequest)

@@ -2,7 +2,7 @@
     "env": {
         "es2021": true,
         "node": true,
-        "jest": true,
+        "jest": true
     },
     "extends": [
         "standard",
@@ -18,6 +18,16 @@
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": "error"
-    }
+        "prettier/prettier": "error",
+        "@typescript-eslint/explicit-function-return-type": "off"
+    },
+    "overrides": [
+      {
+        // enable the rule specifically for TypeScript files
+        "files": ["*.ts", "*.tsx"],
+        "rules": {
+          "@typescript-eslint/explicit-function-return-type": ["error"]
+        }
+      }
+    ]
 }
